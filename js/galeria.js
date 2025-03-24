@@ -28,27 +28,27 @@ function abrirModal(carpeta) {
   // Datos simulados (reemplazar con contenido dinámico en backend)
   const contenido = {
     fotos: [
-      '../img/foto1.jpeg',
-      '../img/foto2.jpeg',
-      '../img/foto3.jpeg',
-      '../img/foto6.jpeg',
-      '../img/foto4.jpeg',
-      '../img/foto5.jpeg',
-      '../img/foto7.jpeg',
-      '../img/foto8.jpeg',
-      '../img/foto9.jpeg',
-      '../img/foto10.jpeg',
-      '../img/foto.jpeg',
-      '../img/besos.jpeg',
-      '../img/fotojuntos.jpeg',
+      'https://jhosep24.github.io/jhosep24Kiara4M/img/foto1.jpeg',
+  'https://jhosep24.github.io/jhosep24Kiara4M/img/foto2.jpeg',
+  'https://jhosep24.github.io/jhosep24Kiara4M/img/foto3.jpeg',
+  'https://jhosep24.github.io/jhosep24Kiara4M/img/foto6.jpeg',
+  'https://jhosep24.github.io/jhosep24Kiara4M/img/foto4.jpeg',
+  'https://jhosep24.github.io/jhosep24Kiara4M/img/foto5.jpeg',
+  'https://jhosep24.github.io/jhosep24Kiara4M/img/foto7.jpeg',
+  'https://jhosep24.github.io/jhosep24Kiara4M/img/foto8.jpeg',
+  'https://jhosep24.github.io/jhosep24Kiara4M/img/foto9.jpeg',
+  'https://jhosep24.github.io/jhosep24Kiara4M/img/foto10.jpeg',
+  'https://jhosep24.github.io/jhosep24Kiara4M/img/foto.jpeg',
+  'https://jhosep24.github.io/jhosep24Kiara4M/img/besos.jpeg',
+  'https://jhosep24.github.io/jhosep24Kiara4M/img/fotojuntos.jpeg'
     ],
     videos: [
-      '../img/video.mp4',
-      '../img/video2.mp4',
-      '../img/video3.mp4',
-      '../img/videogaleria.mp4',
-      '../img/videogalerias.mp4',
-      '../img/video4.mp4'
+  'https://jhosep24.github.io/jhosep24Kiara4M/img/video.mp4',
+    'https://jhosep24.github.io/jhosep24Kiara4M/img/video2.mp4',
+    'https://jhosep24.github.io/jhosep24Kiara4M/img/video3.mp4',
+    'https://jhosep24.github.io/jhosep24Kiara4M/img/videogaleria.mp4',
+    'https://jhosep24.github.io/jhosep24Kiara4M/img/videogalerias.mp4',
+    'https://jhosep24.github.io/jhosep24Kiara4M/img/video4.mp4'
     ]
   };
 
