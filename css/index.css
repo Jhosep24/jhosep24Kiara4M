@@ -1,3 +1,32 @@
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las imágenes se ajusten en pantallas pequeñas */
+    justify-content: center;
+    gap: 20px; /* Espacio entre las imágenes */
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .image-container {
+    flex: 1 1 calc(50% - 20px); /* Dos columnas en pantallas grandes */
+    max-width: calc(50% - 20px);
+    border: 5px solid #ffd1dc; /* Borde rosa suave */
+    border-radius: 15px;
+    overflow: hidden; /* Recorta bordes redondeados */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .gallery-image {
+    width: 100%;
+    height: 220px;
+    display: block;
+    transition: transform 0.3s ease;
+  }
+  
+  .image-container:hover .gallery-image {
+    transform: scale(1.05); /* Zoom suave al pasar el cursor */
+  }
+
 /* Contenedor principal */
 .container {
     max-width: 600px;
@@ -129,6 +158,16 @@
     .counter {
         width: 90%; /* Ancho del 90% en pantallas pequeñas */
         padding: 15px; /* Reducir padding en pantallas pequeñas */
+      }
+          .image-gallery{
+        margin-right: 40px;
+    
+      }
+      .gallery-image{
+        width: 100%;
+        height: 165px;
+    
+       
       }
 
     /* Reducción del tamaño de los corazones */
