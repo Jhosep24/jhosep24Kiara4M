@@ -29,7 +29,7 @@ function abrirModal(carpeta) {
   const contenido = {
     fotos: [
       'https://jhosep24.github.io/jhosep24Kiara4M/img/foto1.jpeg',
-  'https://jhosep24.github.io/jhosep24Kiara4M/img/foto2.jpeg',
+  'https://github.com/Jhosep24/jhosep24Kiara4M/blob/main/img/foto2.jpeg',
   'https://jhosep24.github.io/jhosep24Kiara4M/img/foto3.jpeg',
   'https://jhosep24.github.io/jhosep24Kiara4M/img/foto6.jpeg',
   'https://jhosep24.github.io/jhosep24Kiara4M/img/foto4.jpeg',
