@@ -1,0 +1,479 @@
+/* Estilos generales */
+body {
+    color: azure;
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('../img/fondohome.jpg') no-repeat center center fixed;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    25% { background-position: 50% 50%; }
+    50% { background-position: 100% 50%; }
+    75% { background-position: 50% 100%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Título que late fuera del contenedor */
+.main-title {
+    font-size: 2.5rem;
+    color: white;
+    margin-top: 20px;
+    animation: heartbeat 1.5s ease-in-out infinite;
+    position: relative; /* No lo saca del flujo normal */
+    top: 0; /* Lo deja en la parte superior */
+    transform: translateX(-50%);
+    padding: 10px;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    width: fit-content;
+    display: inline-block;
+    border-radius: 10px; /* Bordes redondeados */
+    max-width: 80%;
+    
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.1); }
+    50% { transform: scale(1); }
+    75% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 600px;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    margin-top: 50px; /* Asegura que el contenido no se superponga al título */
+}
+
+/* Frases románticas con animación de aparición */
+.phrases {
+    font-size: 1.5em;
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeIn 4s ease-in-out forwards;
+    margin: 20px auto; /* Margen automático para centrar */
+    max-width: 90%; /* Limita el ancho máximo al 90% */
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.phrases .phrase {
+    margin-bottom: 15px;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.8);
+    
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Estilo de botones */
+/* Estilos generales para los botones */
+/* Estilos generales para los botones */
+.btn {
+    background-color: #f82bb4;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Efecto de hover en botones */
+.btn:hover {
+    background-color: #ff3385;
+}
+
+.btn:active {
+    transform: translateY(4px);
+}
+
+/* Botón de regreso al inicio */
+.back-btn {
+    background-color: #4CAF50; /* Color verde para destacar */
+    font-size: 1.2em;
+}
+
+.back-btn:hover {
+    background-color: #45a049; /* Cambio de color en hover */
+}
+
+/* Asegura que el botón esté centrado */
+.back-button {
+    margin-top: 20px;
+}
+
+/* Contenedor de botones con estilo increíble */
+
+
+/* Efecto 3D cuando el contenedor es hovered */
+
+/* Estilo de los botones dentro del contenedor */
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px; /* Tamaño de fuente por defecto */
+    text-align: center;
+    background-color: #ff007f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; /* Ocupa todo el ancho disponible */
+  }
+/* Animación de rebote en los botones */
+/* Botón principal */
+.open-modal {
+    background: linear-gradient(to right, #ff6ec4, #7873f5);
+    color: rgb(206, 223, 255);
+    font-size: 18px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.open-modal:hover {
+    background: linear-gradient(to right, #7873f5, #ff6ec4);
+    transform: scale(1.05);
+}
+
+/* MODAL OCULTO AL INICIO */
+.modal {
+    display: none; /* Se mantiene oculto */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-modal{
+    color: black;
+}
+/* Contenido del modal */
+.modal-content {
+    background: rgb(174, 219, 255);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 400px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Botón de cerrar */
+.close {
+    color: #ff6ec4;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #7873f5;
+}
+
+/* Estilo de los botones dentro del modal */
+/* Estilo de los botones dentro del modal */
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.buttons a {
+    text-decoration: none;
+}
+
+/* Los botones ocuparán el 48% del ancho para que sean 2 por fila */
+.buttons .btn {
+    flex: 1 1 calc(50% - 10px); /* Dos columnas */
+    max-width: 150px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    background: linear-gradient(to right, #ff6ec4, #7873f5);
+    color: white;
+    text-align: center;
+}
+
+.buttons .btn:hover {
+    transform: scale(1.05);
+    background: linear-gradient(to right, #7873f5, #ff6ec4);
+}
+
+/* Botón "Regresar" */
+.back-btn {
+    background: #7873f5;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: #ff6ec4;
+    transform: scale(1.05);
+}
+
+
+/* Animación de aparición */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+/* Animación de rebote en los botones */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Estilos para la frase motivacional */
+.motivational-phrase {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: justify; /* Justificado para un texto más bonito */
+    max-width: 80%; /* Limitar el ancho para que no se extienda por toda la pantalla */
+    margin: 20px auto;
+    animation: fadeIn 2s ease-in-out;
+    opacity: 0;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    background-color: #5d247e;
+    border-radius: 20px
+}
+
+/* Animación de entrada para la frase */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Aseguramos que la frase no se extienda por toda la pantalla */
+.motivational-phrase p {
+    line-height: 1.6; /* Mejora la legibilidad */
+    text-align: center;
+    font-size: 1em;
+}
+
+/* Estilos para el contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilos para las frases */
+.phrases {
+    margin-bottom: 30px;
+}
+
+/* Estilos de las frases individuales */
+.phrase {
+    font-size: 1.4em;
+    color: #555;
+    margin: 10px 0;
+}
+
+/* Estilos para la máquina de escribir */
+.typing-container {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    letter-spacing: 2px;
+    padding: 10px;
+}
+
+/* Media Query para pantallas de 480px (celulares) */
+@media screen and (max-width: 480px) {
+    /* Título más pequeño y centrado */
+    .main-title {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-top: 50px;
+        margin: 10px 20px; /* Márgenes superiores e inferiores, y espacio lateral */
+        padding: 0 10px; /* Espacio adicional interno para prevenir colisiones */
+        box-sizing: border-box; /* Asegura que padding no afecte el ancho total */
+        max-width: 80%;
+    }
+    .container{
+        max-width: 80%; /* No se extiende más allá del 90% */
+        padding: 10px;
+    }
+    .modal-content {
+        max-width: 80%;
+        padding: 10px;
+    }
+
+    .buttons .btn, .back-btn {
+        font-size: 13px;
+        padding: 7px;
+    }
+
+    /* Estilo de las frases */
+    .phrase {
+        font-size: 1.1em;
+        margin: 8px 0;
+    }
+
+    /* Frase motivacional ajustada */
+    .motivational-phrase {
+        font-size: 1.3em;
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    /* Contenedor de botones con un tamaño más pequeño y ajustes */
+
+
+    /* Estilo de los botones dentro del contenedor */
+
+
+    .btn {
+        width: 90%; /* Los botones ocuparán el 90% del ancho */
+        max-width: 250px; /* Limita el tamaño máximo de los botones */
+        padding: 8px 15px; /* Hace los botones más pequeños */
+        font-size: 14px; /* Hace el texto más pequeño */
+      }
+
+    .back-btn {
+        font-size: 1.1em;
+        padding: 12px 25px;
+    }
+
+    .back-button {
+        margin-top: 15px;
+    }
+    .buttons {
+        gap: 5px;
+    }
+
+    .buttons .btn {
+        font-size: 13px;
+        padding: 7px;
+        max-width: 90px;
+    }
+
+    .back-btn {
+        font-size: 13px;
+        padding: 7px;
+    }
+}
+
+/* Media Query para pantallas de 760px (tabletas) */
+@media (max-width: 760px) {
+    /* Título más pequeño y centrado */
+    .main-title {
+        font-size: 1.6em;
+        margin-top: 20px;
+        max-width: 80%;
+    }
+    .modal-content {
+        max-width: 80%;
+        padding: 15px;
+    }
+
+    .buttons .btn, .back-btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    /* Ajustes en las frases */
+    .phrase {
+        font-size: 1.2em;
+    }
+
+    /* Frase motivacional ajustada */
+    .motivational-phrase {
+        font-size: 1.2em;
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    /* Ajustes en el contenedor de botones */
+
+    .buttons {
+        gap: 8px;
+    }
+
+    .buttons .btn, .back-btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+ 
+
+    .back-btn {
+        font-size: 1.2em;
+        padding: 14px 30px;
+    }
+    .btn {
+        width: 90%; /* Los botones ocuparán el 90% del ancho */
+        max-width: 200px; /* Limita el tamaño máximo de los botones */
+        padding: 8px 15px; /* Hace los botones más pequeños */
+        font-size: 17px; /* Hace el texto más pequeño */
+      }
+}

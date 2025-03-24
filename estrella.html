@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estrellas de Nuestra Relación</title>
+  <link rel="stylesheet" href="css/estrella.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Nuestro Amor Ilumina el Cielo y Hace Brillar Cada Estrella 💖✨</h1>
+
+    
+    <!-- Mensaje inicial con animación -->
+    <div id="mensaje-inicial" class="mensaje-inicial">
+      ✨ "Desde el primer instante en que llegaste a mi vida, mi mundo se llenó de luz y amor. 💖🌟 Cada día contigo es un sueño hecho realidad, una razón infinita para sonreír y ser feliz. Eres mi destino, mi alegría, mi más hermoso regalo del cielo. Te amo con toda mi alma, mi princesa preciosa. 💕🌹"
+    </div>
+    
+    
+
+    <!-- Guía animada -->
+    <p id="guia-texto" class="guia-texto">
+      "Cada estrella en el cielo guarda un susurro de mi amor por ti. ✨💖 Cada destello es un latido de mi corazón llamándote. 🌟🌹 Descúbrelas todas, porque en cada una de ellas está escrita nuestra historia infinita. 💞"
+    </p>
+    
+    <div class="mapa-estrellas">
+      <!-- Las estrellas se generarán dinámicamente -->
+    </div>
+    <a href="home.html" class="back-link">Volver al Inicio</a>
+<!-- Frase tierna con animación -->
+<div id="frase-tierna" class="frase-tierna">
+  <p>
+    Mi amor, hoy celebramos <strong>4 meses</strong> de este hermoso sueño hecho realidad, <strong>4 meses</strong> llenos de amor, sonrisas y momentos inolvidables. 💖✨ Desde el primer día supe que eras mi destino, mi felicidad, mi más grande y eterno amor. 💫🥰  
+    <br><br>
+    Cada instante a tu lado es un tesoro, cada beso es una promesa de un <strong>para siempre</strong>, cada abrazo es un refugio donde mi alma encuentra su hogar. 💕 Gracias por ser mi alegría, mi paz, mi todo. 🌹✨  
+    <br><br>
+    <strong>Vamos por más, mi vida.</strong> Por muchos más meses, años, décadas, siglos… por una eternidad juntos, porque mi amor por ti no tiene fin. 💍💞 Eres lo mejor que me ha pasado, mi razón de ser, la persona con la que quiero vivir y amar cada segundo de mi vida. 💫❤️  
+    <br><br>
+    <strong>Te amo con toda mi alma, mi preciosa Kiara, hoy y por siempre.</strong> 💖🥰  
+  </p>
+</div>
+
+
+
+
+
+    <div id="modal-info" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span> <!-- Botón de cerrar -->
+        <div id="modal-body"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Audio con la música -->
+    <audio id="backgroundMusic" loop>
+        <source src="music/Yo te amo.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const audio = document.getElementById("backgroundMusic");
+
+            // Intenta reproducir el audio inmediatamente cuando la página carga
+            audio.play().then(() => {
+                audio.currentTime = 18; // Salta los primeros 5 segundos
+            }).catch(error => {
+                console.warn("El navegador bloqueó el autoplay. Se necesita interacción del usuario.");
+            });
+        });
+    </script>
+
+
+  <script>
+    window.addEventListener('load', () => {
+      document.getElementById('backgroundMusic').play();
+    });
+  </script>
+
+  <script src="js/estrella.js"></script>
+</body>
+</html>

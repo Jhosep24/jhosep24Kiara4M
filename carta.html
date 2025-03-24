@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta para mi Amor 💖</title>
+    <link rel="stylesheet" href="css/carta.css">
+    
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">
+        ✨ Para mi niña bonita Kiara 💖😘 <br>  
+        💕 El amor de mi vida 💕
+      </h1>
+      
+    <p class="phrase">
+        "Mi princesa hermosa, cada palabra en esta carta es un reflejo del amor infinito que siento por ti.  
+        Desde el primer día en que entraste en mi vida, todo cobró sentido, cada instante a tu lado es  
+        un regalo del destino. Ábrela y deja que mi corazón te susurre cuánto te amo. 💌✨"
+    </p>
+    <button class="open-btn" onclick="openModal()">Leer Carta 💌</button>
+</div>
+<div class="back-home">
+  <button onclick="window.location.href='home.html'">Regresar </button>
+</div>
+
+<audio id="backgroundMusic" loop>
+    <source src="music/Te voy a amar.mp3" type="audio/mpeg">
+    Tu navegador no soporta el elemento de audio.
+</audio>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const audio = document.getElementById("backgroundMusic");
+
+        // Intenta reproducir el audio inmediatamente cuando la página carga
+        audio.play().then(() => {
+            audio.currentTime = 12; // Salta los primeros 5 segundos
+        }).catch(error => {
+            console.warn("El navegador bloqueó el autoplay. Se necesita interacción del usuario.");
+        });
+    });
+</script>
+
+<div class="modal" id="modal">
+    <div class="modal-content">
+        <h2>Cuatro meses de un amor infinito 💕</h2>
+        <p>
+            Mi amor, hoy celebramos cuatro meses juntos, los cuatro meses más felices de toda mi vida.  
+            Desde el momento en que entraste en mi mundo, todo cobró sentido, todo se volvió más hermoso,  
+            más especial, más nuestro. A tu lado, cada día es un sueño hecho realidad, una historia de amor  
+            que quiero escribir contigo para siempre. 💖
+        </p>
+        <p>
+            Recuerdo perfectamente el día en que te conocí, el momento exacto en que vi por primera vez  
+            esos ojitos tan hermosos que tienes. En ese instante, supe que mi corazón ya te pertenecía.  
+            Me quedé completamente enamorado de tu mirada, de tu ternura, de la dulzura que transmites  
+            con solo existir. Y cuando sonreíste… mi amor, fue el instante más mágico de mi vida.  
+            Tu sonrisa iluminó mi mundo y supe que nunca más querría apartarme de ti.  
+        </p>
+        <p>
+            Tus labios… qué hermosa sensación es besarlos, sentir su suavidad, su dulzura,  
+            la forma en que encajan perfectamente con los míos. Me encanta cada beso que nos damos,  
+            porque en cada uno hay amor puro, hay promesas silenciosas, hay sueños compartidos.  
+            Tu boquita preciosa es uno de mis lugares favoritos en el mundo. 💋💕
+        </p>
+        <p>
+            Amo tocar tu cabello, enredar mis dedos en él y sentir su suavidad.  
+            Amo acariciar tu carita perfecta, cada rasgo tuyo es como una obra de arte  
+            que admiro todos los días. Me encanta verte, perderme en ti,  
+            saber que eres mi persona favorita en todo el universo.  
+        </p>
+        <p>
+            Mi amor, quiero que esto sea para toda la vida. Quiero que siempre estemos juntos,  
+            que sigamos compartiendo cada risa, cada abrazo, cada mirada llena de amor.  
+            Me encanta cada momento a tu lado, cada que nos vemos, cada conversación, cada abrazo largo  
+            en el que me pierdo en ti. Quiero que sigamos construyendo recuerdos hermosos,  
+            que cada día sea un capítulo más en nuestra historia de amor infinito.  
+        </p>
+        <p>
+            No quiero solo meses contigo, quiero años, décadas, siglos… Quiero envejecer a tu lado,  
+            construir nuestra vida juntos, cumplir cada sueño de tu mano. Imagina nuestra casita,  
+            nuestro primer carro, nuestra familia, nuestra bebita con tus ojitos hermosos  
+            y tu sonrisa perfecta, o nuestro bebito, nuestros ositos que nos representen a ti y a mí,  
+            porque tú eres mi osita y yo soy tu osito. 🧸💕
+        </p>
+        <p>
+            Te amo con toda mi vida, mi Kiara preciosa. No hay palabras suficientes para describir  
+            lo importante que eres para mí, lo maravillosa, única y especial que eres.  
+            Te prometo que estaré a tu lado siempre, en cada risa, en cada abrazo, en cada meta  
+            y en cada obstáculo. No importa lo que pase, jamás soltaré tu mano, jamás dejaré de amarte,  
+            porque eres mi todo, mi destino, mi amor eterno. 💑✨
+        </p>
+        <p>
+            Pase lo que pase, en los momentos felices y en los difíciles, siempre voy a estar para ti  
+            y contigo. Nunca estarás sola, porque mi amor por ti es más grande que cualquier cosa.  
+            Eres mi vida, mi felicidad, mi razón de ser. Cada día te amo más y más,  
+            cada día descubro algo nuevo que me enamora aún más de ti.  
+            Eres perfecta, mi amor, la mujer más increíble que existe en este mundo.  
+            Te voy a cuidar como te mereces, con todo el amor, con toda la ternura,  
+            con todo mi corazón. Porque no hay nada más hermoso en esta vida que amarte. 💖  
+        </p>
+        <p>
+            Hoy, mañana y siempre, tú y yo, juntos por siempre y para siempre.  
+            Te amo con cada latido de mi corazón, con cada suspiro, con cada pensamiento.  
+            Y te lo demostraré cada día, haciéndote la mujer más feliz del mundo,  
+            porque eso es lo que más deseo: verte sonreír, verte brillar, verte feliz a mi lado. 💕🌹 TE AMO MUCHISIMO MI AMORCITA KIARA💖😘🥰 
+        </p>
+        <button class="close-btn" onclick="closeModal()">Cerrar Carta</button>
+    </div>    
+</div>
+
+<div class="romantic-section">
+  <img src="img/osin.gif" alt="Ositos enamorados" class="love-gif">
+  <div class="love-phrases">
+      <p>💖 Eres el sueño más hermoso que la vida me permitió vivir despierto. 💖</p>
+      <p>💫 Si tuviera que elegir entre respirar y amarte, usaría mi último aliento para decirte cuánto te amo. 💫</p>
+      <p>💕 Eres mi refugio, mi alegría, mi amor eterno. ¡Te amo, mi Kiara! 💕</p>
+  </div>
+</div>
+
+
+
+<script src="js/carta.js"></script>
+</body>
+</html>

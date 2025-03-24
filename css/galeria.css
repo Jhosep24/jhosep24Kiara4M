@@ -1,0 +1,444 @@
+body {
+    color: azure;
+    margin: 0;
+    width: 100%;
+    min-height: 100vh; /* Asegura que el contenido sea desplazable */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(
+        45deg, 
+        rgba(114, 45, 183, 0.85), /* Púrpura oscuro elegante */
+        rgba(190, 44, 190, 0.8), /* Rosa oscuro romántico */
+        rgba(34, 117, 212, 0.85), /* Azul profundo y calmante */
+        rgba(0, 0, 85, 0.85),    /* Azul medianoche */
+        rgba(45, 0, 90, 0.85),  /* Púrpura misterioso */
+        rgba(209, 14, 108, 0.85) /* Rosa pastel suave */
+    );
+    background-size: 400% 400%;
+    animation: gradientAnimation 12s ease infinite; /* Animación suave del degradado */
+    overflow-x: hidden;
+    text-align: center;
+   
+}
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    25% { background-position: 50% 50%; }
+    50% { background-position: 100% 50%; }
+    75% { background-position: 50% 100%; }
+    100% { background-position: 0% 50%; }
+}
+
+#galeria-recuerdos {
+    text-align: center;
+    padding: 2rem;
+    background-color: #fef9fb;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .titulo-galeria {
+    font-size: 1.8rem;
+    color: #7b24ecd0;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    animation: slideIn 2s ease-out;
+    background-color: rgb(200, 253, 255);
+    border-radius: 20px;
+    padding: 10px;
+    max-width: 80%;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+
+  .frase-romantica {
+    text-align: center;
+    margin-top: 20px;
+    color: #d92c7f;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: rgba(255, 255, 255, 0.2); /* Fondo blanco con transparencia */
+    padding: 15px 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(5px); /* Efecto de desenfoque */
+    display: inline-block;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+  
+.mensaje-romantico {
+  font-size: 26px;
+  line-height: 1.8;
+  color: #b22234;
+  font-weight: 600;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  max-width: 80%;
+  margin: 0 auto; /* Centrar horizontalmente */
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente dentro del contenedor */
+  align-items: center; /* Centrar verticalmente dentro del contenedor */
+  padding: 20px;
+  background: rgba(255, 182, 193, 0.2); /* Rosa claro con transparencia */
+  border-radius: 15px;
+  backdrop-filter: blur(8px); /* Efecto de desenfoque */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.mensaje-romantico:hover {
+  background: rgba(255, 105, 180, 0.3); /* Un poco más de intensidad al pasar el mouse */
+  transform: scale(1.02);
+}
+
+  
+
+  
+  .galeria-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Adaptable a diferentes tamaños */
+    gap: 15px; /* Espacio entre las imágenes */
+    padding: 20px;
+    justify-items: center;
+  }
+  
+  .foto-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .foto-item a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .foto-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .foto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .foto-item:hover .foto {
+    transform: scale(1.1);
+  }
+  
+  .leyenda {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: opacity 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .foto-item:hover .leyenda {
+    opacity: 1;
+  }
+  
+  .boton-musica {
+    margin-top: 2rem;
+  }
+  
+  #playMusic {
+    background-color: #ff3234;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #playMusic:hover {
+    background-color: #ff989e;
+  }
+  
+  audio {
+    display: none;
+  }
+  
+  .boton-volver { 
+    margin-top: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #volverHome {
+    background-color: #ff5c8d;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    animation: bounceIn 1s ease-out;
+  }
+  
+  #volverHome:hover {
+    background-color: #ff99b1;
+    transform: scale(1.1);
+  }
+  
+  @keyframes bounceIn {
+    0% {
+      transform: scale(0.5);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  /* Estilos del Modal */
+.modal {
+  display: none; /* Oculto por defecto */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9); /* Fondo oscuro transparente */
+}
+
+.modal-content {
+  margin: 5% auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 800px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.modal-content img,
+.modal-content video {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  color: #333;
+  cursor: pointer;
+}
+
+#modal-body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 25px;
+  background: linear-gradient(90deg, rgb(255, 204, 255), rgb(243, 186, 255), rgb(206, 151, 240));
+}
+
+#modal-body img,
+#modal-body video {
+  width: 30%; /* Ajusta el tamaño */
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+#modal-body img:hover,
+#modal-body video:hover {
+  transform: scale(1.1);
+}
+
+/* Botón Regresar */
+.btn-regresar {
+  display: block;
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-regresar:hover {
+  background-color: #d32f2f;
+}
+
+  
+  @media screen and (max-width: 480px) {
+    .galeria-container {
+      grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    }
+  
+    
+  
+    .leyenda {
+      font-size: 0.7rem;
+    }
+  }
+
+  .subtitulo-galeria {
+    text-align: center;
+    font-size: 1.2rem; /* Tamaño más pequeño pero legible */
+    color: #ffffff; /* Azul violeta elegante */
+    font-style: italic; /* Toque cursivo para hacerlo más delicado */
+    line-height: 1.5; /* Espaciado entre líneas */
+    margin-bottom: 20px;
+    animation: deslizar 2.5s ease-out; /* Animación para que se deslice suavemente */
+    max-width: 80%;
+  }
+  
+  /* Animación de aparición */
+  @keyframes aparecer {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  /* Animación de deslizamiento */
+  @keyframes deslizar {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  
+  .video-player-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: auto;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    z-index: 1100;
+  }
+  
+  #video-player {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .modal-content video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .video-poster {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .video-poster:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+  
+  video {
+    width: 90%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .media-item {
+    width: 100%;
+    height: auto;
+    max-width: 300px; /* Limita el tamaño de las miniaturas */
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  .media-grande {
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+    margin: auto;
+    display: block;
+  }
+  .back-button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .back-button:hover {
+    background-color: #0056b3;
+  }
+  .video-grande {
+    width: 80%; /* Establece el ancho máximo del video */
+    height: auto; /* Mantiene la proporción del video */
+    max-height: 80vh; /* Limita la altura al 80% de la altura de la ventana */
+    margin: auto; /* Centra el video */
+    display: block; /* Para que los márgenes se apliquen correctamente */
+    object-fit: contain; /* Asegura que el video se ajuste sin recortarse */
+  }
+  
+  @media (max-width: 768px) {
+    .video-grande {
+      width: 100%; /* En pantallas más pequeñas, ocupa todo el ancho */
+      max-height: 60vh; /* Ajusta la altura para dispositivos móviles */
+    }
+    .image-grande {
+      width: 100%; /* En dispositivos móviles, ocupa el 100% del ancho */
+      max-height: 60vh; /* Ajusta la altura para pantallas pequeñas */
+    }
+  }
+
+  .image-grande {
+    width: 80%; /* Ancho máximo del 80% */
+    height: auto; /* Mantiene la proporción de la imagen */
+    max-height: 80vh; /* Limita la altura al 80% de la ventana */
+    margin: auto; /* Centra la imagen */
+    display: block; /* Asegura que se apliquen los márgenes correctamente */
+  }
+  

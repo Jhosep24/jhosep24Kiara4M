@@ -1,0 +1,830 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url('../img/fondo3.jpg') no-repeat center center fixed;
+    background-size: cover;
+    overflow-x: hidden;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  
+  }
+
+/* Estilo para el título fuera del contenedor */
+.titulo-agradecimiento {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+  background: linear-gradient(45deg, rgba(255, 182, 193, 0.8), rgba(255, 105, 180, 0.8));
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(255, 20, 147, 0.8);
+  animation: glow 2s infinite alternate;
+  max-width: 80%;
+  margin-bottom: 20px;
+  margin:8%; 
+}
+
+.titulo-latido {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 3px 3px 10px rgba(255, 20, 147, 0.8);
+  animation: heartbeat 1.5s infinite alternate;
+}
+
+/* Animación de latido */
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* Efecto de brillo */
+@keyframes glow {
+  0% { box-shadow: 0 0 10px rgba(255, 105, 180, 0.8); }
+  100% { box-shadow: 0 0 20px rgba(255, 20, 147, 1); }
+}
+
+/* Animación de latido */
+@keyframes latir {
+    0% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(1.1);
+    }
+    50% {
+      transform: scale(1);
+    }
+    75% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+
+/***** Contenedor de Agradecimiento *****/
+
+.agradecimiento-container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1); /* Más transparente */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 105, 180, 0.3); /* Suaviza el brillo */
+  animation: glow 2s infinite alternate;
+  margin: 8%;
+  backdrop-filter: blur(5px); /* Sutil desenfoque para mayor legibilidad */
+  border: 2px solid rgba(255, 255, 255, 0.3); /* Borde sutil para resaltar */
+}
+
+
+.agradecimiento-titulo {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 3px 3px 10px rgba(255, 20, 147, 0.8);
+  animation: heartbeat 1.5s infinite alternate;
+}
+
+.agradecimiento-texto p {
+  font-size: 18px;
+  color: white;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.btn-sorpresa {
+  background: #ff69b4;
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255, 20, 147, 0.7);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn-sorpresa:hover {
+  transform: scale(1.1);
+}
+
+.sorpresa-oculta {
+  display: none;
+  margin-top: 20px;
+}
+
+.carta-magica {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 20, 147, 0.8);
+  text-align: center;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.carta-magica h3 {
+  font-size: 24px;
+  color: #ff69b4;
+}
+
+.cofre {
+  font-size: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.cofre:hover {
+  transform: scale(1.2);
+}
+
+.contenido-regalo {
+  display: none;
+  margin-top: 15px;
+}
+
+.gif-sorpresa {
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 20, 147, 0.7);
+}
+
+.mensaje-final {
+  font-size: 22px;
+  color: #ff1493;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 0 10px rgba(255, 105, 180, 0.8); }
+  100% { box-shadow: 0 0 20px rgba(255, 20, 147, 1); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+  /***** Título *****/
+
+  
+  /***** Texto *****/
+
+  
+  /***** Botones *****/
+  .btn-cerrar {
+    background: #ff4444;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 15px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(255, 69, 69, 0.7);
+    transition: transform 0.3s ease-in-out;
+}
+
+.btn-cerrar:hover {
+    transform: scale(1.1);
+    background: #cc0000;
+}
+
+  
+  /* Estilo para los botones */
+.btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-sorpresa {
+    background-color: #ff69b4;
+    color: white;
+  }
+  
+  .btn-sorpresa:hover {
+    background-color: #ff4081;
+  }
+  
+  .btn-volver {
+    background-color: #4caf50;
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .btn-volver:hover {
+    background-color: #45a049;
+  }
+  
+  .volver-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  /***** Animaciones *****/
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInDown {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+
+
+  /* Estilo para el corazón latiendo */
+  .corazon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    
+    height: 160px;
+}
+
+.corazonk {
+    font-size: 100px; /* Corazón grande y hermoso */
+    animation: latido 1.5s infinite ease-in-out;
+    position: absolute;
+    top: 0;
+    
+}
+
+@keyframes latido {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+}
+
+.promesa-texto {
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    position: absolute;
+    top: 15px; /* Asegura que el texto esté justo encima del corazón */
+    animation: brillar 1s ease-in-out infinite alternate;
+    margin-top: 30px;
+    
+}
+
+@keyframes brillar {
+    0% { opacity: 0.8; transform: translateY(-3px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+  
+  .corazon:hover {
+    background-color: #e14e90;
+  }
+  
+  .promesa-texto {
+    font-size: 2.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  /* Animación de latir */
+  @keyframes latir {
+    0% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(1.1);
+    }
+    50% {
+      transform: scale(1);
+    }
+    75% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  /* Estilos para el modal */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 15px;
+  }
+  
+  .modal-content h2 {
+    color: #ff69b4;
+  }
+  
+  .modal-content p {
+    color: #333;
+    font-size: 1.2rem;
+  }
+  
+  /* Estilo para el botón de cerrar el modal */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Media Query para pantallas pequeñas (hasta 480px) */
+  @media (max-width: 480px) {
+    .corazon {
+      font-size: 1.2rem;
+      padding: 15px 30px;
+    }
+  
+    .promesa-texto {
+      font-size: 1.4rem;
+    }
+  
+    .modal-content h2 {
+      font-size: 1.5rem;
+    }
+  
+    .modal-content p {
+      font-size: 1rem;
+    }
+  }
+/* Estilo para el botón "Regresar" en el modal */
+.btn-regresar {
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  .btn-regresar:hover {
+    background-color: #e14e90;
+  }
+/* Contenedor de las frases */
+.frases-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Siempre dos columnas */
+  gap: 15px; /* Espacio entre los cuadros */
+  margin: 20px auto;
+  max-width: 90%; /* Ancho máximo del contenedor */
+  text-align: center;
+}
+
+/* Diseño de cada cuadro */
+.frase-cuadro {
+  background-color: #ffe4e1; /* Fondo suave */
+  border: 2px solid #ff69b4; /* Borde rosa */
+  border-radius: 20px; /* Bordes redondeados */
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para efecto flotante */
+  font-size: 1.1rem;
+  color: #333;
+  font-family: 'Courier New', Courier, monospace; /* Fuente personalizada */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto al pasar el cursor */
+.frase-cuadro:hover {
+  transform: scale(1.05); /* Aumentar tamaño */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra más fuerte */
+}
+
+
+/* Contenedor para las animaciones románticas */
+.animaciones-romanticas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* No interferir con los clics */
+  overflow: hidden;
+  z-index: 999; /* Siempre visible */
+}
+
+/* Corazón y carta */
+.elemento-romantico {
+  position: absolute;
+  font-size: 2rem;
+  opacity: 0;
+  animation: flotando 5s ease-in-out infinite, desvanecer 5s ease-in-out infinite;
+}
+
+/* Animación de flotación */
+@keyframes flotando {
+  0% {
+    transform: translateY(100vh) translateX(0);
+  }
+  50% {
+    transform: translateY(50vh) translateX(20px) rotate(20deg);
+  }
+  100% {
+    transform: translateY(-10vh) translateX(-20px) rotate(-20deg);
+  }
+}
+
+/* Animación de aparición/desaparición */
+@keyframes desvanecer {
+  0%, 100% {
+    opacity: 0;
+  }
+  25%, 75% {
+    opacity: 1;
+  }
+}
+
+/* Estilo del contenedor que rodea el mensaje */
+.contenedor-escribir {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 20px;
+}
+
+/* Estilo del cuadro donde aparece el mensaje */
+.cuadro-mensaje {
+  background-image: linear-gradient(45deg, #F8BBD0, #D1A7E5, #D500F9);
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 80%;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  position: relative;
+  overflow: hidden;
+  font-size: 24px;
+  border-radius: 25px;
+}
+
+/* Estilo para el texto que se escribe */
+#maquina-escribir {
+  background-image: linear-gradient(45deg, #F8BBD0, #D1A7E5, #D500F9);
+  border-radius: 10px;
+  white-space: normal;
+  overflow: hidden;
+  opacity: 1;
+  transition: opacity 1s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Centra el texto dentro del área */
+  padding: 0; /* Elimina cualquier espacio adicional */
+  box-sizing: border-box; /* Asegura que el padding no afecte el tamaño */
+  font-size: 20px;
+}
+
+/* Efecto de corazón */
+.heart {
+  color: red;
+  font-size: 100px;
+  animation: growHeart 1.5s forwards, disappear 1s forwards;
+}
+
+@keyframes growHeart {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Animación de las chispas */
+@keyframes sparkle {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(10px, 10px);
+    opacity: 0;
+  }
+}
+
+.sparks {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 20px;
+  color: pink;
+  opacity: 1;
+  animation: sparkle 0.5s infinite;
+}
+
+#chispas {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.sorpresa-nueva {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1000;
+}
+
+
+
+.corazon-nueva {
+  font-size: 50px;
+  animation: explotarCorazonesNueva 2s ease-out infinite, desaparecerCorazon 3s forwards;
+}
+
+.mensaje-te-amo-nueva {
+  font-size: 24px;
+  font-weight: bold;
+  color: #a200ff;
+  animation: aparecerMensajeNueva 3s ease-in-out, desaparecerMensaje 3s forwards;
+}
+
+/* Animación para los corazones explotando */
+@keyframes explotarCorazonesNueva {
+  0% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(2) translateY(-100px);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(0) translateY(-200px);
+    opacity: 0;
+  }
+}
+
+/* Animación para el mensaje "Te amo" apareciendo */
+@keyframes aparecerMensajeNueva {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animación para que los corazones desaparezcan */
+@keyframes desaparecerCorazon {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+/* Animación para que el mensaje "Te amo" desaparezca */
+@keyframes desaparecerMensaje {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+
+.parr{
+  font-size: 0.3rem; 
+}
+
+
+.mensaje-previo {
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(45deg, #ff9ff3, #feca57, #ff6b6b, #48dbfb);
+  background-size: 300% 300%;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(255, 105, 180, 0.5);
+  animation: fondo-magic 5s infinite alternate;
+  transition: all 0.3s ease-in-out;
+  max-width: 80%;
+  margin: 8%;
+}
+.parr-animada{
+  font-size: 20px;
+}
+@keyframes fondo-magic {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+.corazon-latido {
+  animation: latido 1.5s infinite;
+}
+
+@keyframes latido {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.parr-animada {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: aparecer 1s ease-out forwards;
+}
+
+.parr-animada:nth-child(2) { animation-delay: 0.5s; }
+.parr-animada:nth-child(3) { animation-delay: 1s; }
+.parr-animada:nth-child(4) { animation-delay: 1.5s; }
+
+@keyframes aparecer {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.resaltado {
+  color: #ffeb3b;
+  font-size: 26px;
+  font-weight: bold;
+  text-shadow: 0 0 15px rgba(255, 235, 59, 0.8);
+  animation: brillar 1.5s infinite alternate;
+}
+
+@keyframes brillar {
+  0% { text-shadow: 0 0 5px rgba(255, 235, 59, 0.5); }
+  100% { text-shadow: 0 0 20px rgba(255, 235, 59, 1); }
+}
+
+
+
+  /* Media Query para pantallas pequeñas (hasta 480px) */
+@media (max-width: 480px) {
+    .titulo-agradecimiento h1 {
+      font-size: 1.5rem; /* Reducir el tamaño del título */
+    }
+    .mensaje-previo {
+      font-size: 0,5rem; /* Ajusta el tamaño de la fuente en pantallas pequeñas */
+      padding: 10px; /* Reduce el padding en pantallas pequeñas */
+    }
+    .parr{
+      font-size: 1rem;
+    }
+    .agradecimiento-container {
+      padding: 20px 10px; /* Menos padding en dispositivos pequeños */
+    }
+  
+    .agradecimiento-titulo {
+      font-size: 1.5rem; /* Reducir el tamaño del subtítulo */
+    }
+  
+    .agradecimiento-texto p {
+      font-size: 0.9rem; /* Reducir el tamaño del texto */
+    }
+  
+    .agradecimiento-botones .btn {
+      font-size: 0.9rem; /* Reducir el tamaño de los botones */
+      padding: 8px 16px;
+    }
+  
+    .volver-container .btn {
+      font-size: 0.9rem; /* Reducir el tamaño del botón Volver */
+      padding: 8px 16px;
+    }
+    
+    .frases-container {
+      grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+      gap: 10px; /* Reduce el espacio entre cuadros */
+      margin: 15px auto; /* Margen reducido */
+      max-width: 95%; /* Contenedor más estrecho */
+    }
+  
+    .frase-cuadro {
+      padding: 10px; /* Menor espacio interno */
+      font-size: 1rem; /* Texto más pequeño */
+      border-radius: 15px; /* Bordes más pequeños */
+    }
+    .elemento-romantico {
+      font-size: 1rem; /* Aún más pequeño para pantallas muy pequeñas */
+    }
+    .cuadro-mensaje {
+      width: 200px; /* Cuadro aún más pequeño */
+      padding: 10px; /* Menos espacio dentro */
+      min-height: 100px; /* Altura mínima ajustada */
+    }
+  
+    #maquina-escribir {
+      font-size: 1rem; /* Texto más pequeño */
+    }
+   
+  }
+  
+  /* Media Query para pantallas medianas (hasta 760px) */
+  @media (max-width: 760px) {
+    .titulo-agradecimiento h1 {
+      font-size: 1.6rem; /* Ajustar tamaño del título */
+    }
+  
+    .agradecimiento-container {
+      padding: 25px 15px; /* Ajustar padding */
+    }
+  
+    .agradecimiento-titulo {
+      font-size: 1.7rem; /* Ajustar tamaño del subtítulo */
+    }
+  
+    .agradecimiento-texto p {
+      font-size: 1rem; /* Ajustar tamaño del texto */
+    }
+  
+    .agradecimiento-botones .btn {
+      font-size: 1rem; /* Ajustar tamaño de los botones */
+      padding: 9px 18px;
+    }
+  
+    .volver-container .btn {
+      font-size: 1rem; /* Ajustar tamaño del botón Volver */
+      padding: 9px 18px;
+    }
+    .elemento-romantico {
+      font-size: 1rem; /* Tamaño más pequeño para móviles */
+    }
+    .cuadro-mensaje {
+      width: 250px; /* Cuadro más pequeño */
+      padding: 15px; /* Menos espacio dentro */
+      min-height: 120px; /* Altura menor */
+    }
+  
+    #maquina-escribir {
+      font-size: 1.2rem; /* Texto más pequeño */
+    }
+  }

@@ -1,0 +1,153 @@
+/* Contenedor principal */
+.container {
+    max-width: 600px;
+    padding: 20px;
+    border: 2px solid rgb(174, 0, 255);
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    overflow: hidden; /* Evita que el contenido se desborde */
+    margin-bottom: 40px; /* Espacio entre el botón y el texto de abajo */
+}
+.counter {
+    background-color: #c68eff; /* Fondo suave y romántico */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    max-width: 500px;
+    margin: 20px auto; /* Esto centra el contador */
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Para asegurarse de que el padding no afecte el ancho */
+  }
+
+.counter p {
+  font-size: 15px;
+  color: #220035; /* Un color bonito y cálido */
+  font-weight: bold;
+}
+
+.counter span {
+  color: #0059ff; /* Un color que resalte (por ejemplo, naranja o rosa) */
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.counter:hover {
+  background-color: #f5d3e7; /* Cambio de color al hacer hover */
+  transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
+}
+
+.main-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, violet, pink, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: heartbeat 2s infinite ease-in-out;
+    display: inline-block; /* Asegura que el título se comporte correctamente */
+}
+
+/* Animación de latido */
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    75% {
+        transform: scale(1.1);
+    }
+}
+
+.phrases {
+    font-size: 1.5em;
+    margin-top: 50px; /* Espacio adicional para evitar superposición */
+}
+
+.phrase {
+    display: block;
+    margin: 15px 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes glow {
+    0% { text-shadow: 0 0 10px violet; }
+    100% { text-shadow: 0 0 20px pink; }
+}
+
+
+.audio-container {
+    text-align: center; /* Centra el botón */
+    margin-top: 20px; /* Espacio superior */
+}
+
+.audio-button {
+    background-color: #9e43f8;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+.audio-button:hover {
+    background-color: #d1b3f0;
+}
+
+
+
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 1.5rem;
+    }
+
+    .phrase {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    
+
+    .counter {
+        width: 90%; /* Ancho del 90% en pantallas pequeñas */
+        padding: 15px; /* Reducir padding en pantallas pequeñas */
+      }
+
+    /* Reducción del tamaño de los corazones */
+    .bubbles .bubble {
+        width: 80px;
+        height: 80px;
+    }
+
+    
+
+    /* Ajustar la disposición de los contenedores */
+    .container {
+        padding: 15px;
+        margin: 0 auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+   
+
+  
+}
