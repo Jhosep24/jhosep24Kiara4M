@@ -28,22 +28,22 @@ function abrirModal(carpeta) {
   // Datos simulados (reemplazar con contenido dinámico en backend)
   const contenido = {
     fotos: [
-      'https://jhosep24.github.io/jhosep24Kiara4M/img/foto1.jpeg',
-  'https://github.com/Jhosep24/jhosep24Kiara4M/blob/main/img/foto2.jpeg',
-  'https://jhosep24.github.io/jhosep24Kiara4M/img/foto3.jpeg',
-  'https://jhosep24.github.io/jhosep24Kiara4M/img/foto6.jpeg',
-  'https://jhosep24.github.io/jhosep24Kiara4M/img/foto4.jpeg',
-  'https://jhosep24.github.io/jhosep24Kiara4M/img/foto5.jpeg',
-  'https://jhosep24.github.io/jhosep24Kiara4M/img/foto7.jpeg',
-  'https://jhosep24.github.io/jhosep24Kiara4M/img/foto8.jpeg',
-  'https://jhosep24.github.io/jhosep24Kiara4M/img/foto9.jpeg',
-  'https://jhosep24.github.io/jhosep24Kiara4M/img/foto10.jpeg',
-  'https://jhosep24.github.io/jhosep24Kiara4M/img/foto.jpeg',
-  'https://jhosep24.github.io/jhosep24Kiara4M/img/besos.jpeg',
-  'https://jhosep24.github.io/jhosep24Kiara4M/img/fotojuntos.jpeg'
+    'https://jhosep24.github.io/jhosep24Kiara4M/img/foto1.jpeg',
+    'https://github.com/Jhosep24/jhosep24Kiara4M/blob/main/img/foto2.jpeg',
+    'https://jhosep24.github.io/jhosep24Kiara4M/img/foto3.jpeg',
+    'https://jhosep24.github.io/jhosep24Kiara4M/img/foto6.jpeg',
+    'https://jhosep24.github.io/jhosep24Kiara4M/img/foto4.jpeg',
+    'https://jhosep24.github.io/jhosep24Kiara4M/img/foto5.jpeg',
+    'https://jhosep24.github.io/jhosep24Kiara4M/img/foto7.jpeg',
+    'https://jhosep24.github.io/jhosep24Kiara4M/img/foto8.jpeg',
+    'https://jhosep24.github.io/jhosep24Kiara4M/img/foto9.jpeg',
+    'https://jhosep24.github.io/jhosep24Kiara4M/img/foto10.jpeg',
+    'https://jhosep24.github.io/jhosep24Kiara4M/img/foto.jpeg',
+    'https://jhosep24.github.io/jhosep24Kiara4M/img/besos.jpeg',
+    'https://jhosep24.github.io/jhosep24Kiara4M/img/fotojuntos.jpeg'
     ],
     videos: [
-  'https://jhosep24.github.io/jhosep24Kiara4M/img/video.mp4',
+    'https://jhosep24.github.io/jhosep24Kiara4M/img/video.mp4',
     'https://jhosep24.github.io/jhosep24Kiara4M/img/video2.mp4',
     'https://jhosep24.github.io/jhosep24Kiara4M/img/video3.mp4',
     'https://jhosep24.github.io/jhosep24Kiara4M/img/videogaleria.mp4',
